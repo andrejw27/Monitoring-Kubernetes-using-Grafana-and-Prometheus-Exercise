@@ -80,4 +80,9 @@ Now Prometheus is running. We can visualize the metrics recorded in Prometheus u
 * In the URL box, we need to specify the node port in which the prometheus pod is running. This is done by navigating to the Prometheus homepage and click on Status>Command-Line Flags. We will see the configuration of the running pod. Find the designated url of the running pod under name "web.external-url". Copy this url to the URL box in the Grafana Data Source page.
   ![](Images/prom_config.PNG)
   ![](Images/prom_url.PNG)
+* After the configuration in the data source is set, click Save & Test. Then, if the data source is connected, we will see Data Source is working comment.
+  ![](Images/verify_data_source.PNG)
+* Now, it is time to build the dashboard. On the left pane of the Grafana homepage, click the "+"/Create button to create a dashboard or import if using existing templates provided by the [grafana dashboards](https://grafana.com/grafana/dashboards). For the first time of creating a dashboard, we will see a blank space and we just need to add panel to create a visualization of each metric. 
+
+
 
