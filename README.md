@@ -62,4 +62,12 @@ Now Prometheus is running. We can visualize the metrics recorded in Prometheus u
   ![](Images/get_pods_grafana.PNG)
   ![](Images/post_forward_graf.PNG)
  * Access the Grafana dashboard on http://127.0.0.1:3000 . We should see Grafana homepage asking for login. The username and password can be obtained using helm with the following command.
-  ![](Images/get_grafana_credential.PNG)
+  ![](Images/get_graf_cred.PNG)
+  
+  The username and password can be found in the value of admin-user and admin-password. However, those values need to be decoded using the following command:
+  ![](Images/decode_user_pass.PNG)
+  
+  The username and the password are admin and sLWHEBrnMYxdp61DbUpKXAuqb9Ij98PlAgsk3jHC. Copy this login credentials to the Grafana login page and we should be able to login.
+  
+## Build the Dashboard
+* Once we are able to login, we are redirected to the homepage of Grafana. 
