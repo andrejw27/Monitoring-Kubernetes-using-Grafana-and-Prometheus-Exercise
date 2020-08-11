@@ -38,3 +38,9 @@ This is an attempt of monitoring a server, managed by Kubernetes, using Grafana 
   ```
   $ kubectl get pods -n monitor
   ```
+  ![](Images/verify_prometheus.PNG)
+* Now that the pods are running, we have the option to use the Prometheus dashboard right from our local machine. This is done by using the following command:
+  ```
+  $ kubectl port-forward -n monitor prometheus-prometheus-operator-prometheus-0 9090
+  ```
+  ![](Images/post_forward_prom.PNG)
