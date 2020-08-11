@@ -44,6 +44,9 @@ This is an attempt of monitoring a server, managed by Kubernetes, using Grafana 
   $ kubectl port-forward -n monitor prometheus-prometheus-operator-prometheus-0 9090
   ```
   ![](Images/post_forward_prom.PNG)
+  
+  Visit http://127.0.0.1:9090 to access the Prometheus dashboard.
+  ![](Images/prom_home.PNG)
 
 Now Prometheus is running. We can visualize the metrics recorded in Prometheus using Grafana.
 
@@ -71,3 +74,9 @@ Now Prometheus is running. We can visualize the metrics recorded in Prometheus u
   
 ## Build the Dashboard
 * Once we are able to login, we are redirected to the homepage of Grafana. 
+  ![](Images/graf_home.PNG)
+* In order Grafana to work, we need to add data source to visualize. In this case, we want to connect the metrics pulled in Prometheus as the data source to Grafana by clicking on the cogwheel button and click the Data Source option. Add data source and select Prometheus. We will see the page below.
+  ![](Images/post_data_source.PNG)
+* In the URL box, we need to specify the node port in which the prometheus pod is running. This is done by navigating to the Prometheus homepage and click on Status>Command-Line Flags. We will see the configuration of the running pod. Find the designated url of the running pod under name "web.external-url". Copy this url to the URL box in the Grafana Data Source page.
+  ![](Images/prom_url.PNG)
+
