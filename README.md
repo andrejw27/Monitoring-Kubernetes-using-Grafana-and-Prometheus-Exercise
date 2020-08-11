@@ -83,6 +83,7 @@ Now Prometheus is running. We can visualize the metrics recorded in Prometheus u
 * After the configuration in the data source is set, click Save & Test. Then, if the data source is connected, we will see Data Source is working comment.
   ![](Images/verify_data_source.PNG)
 * Now, it is time to build the dashboard. On the left pane of the Grafana homepage, click the "+"/Create button to create a dashboard or import if using existing templates provided by the [grafana dashboards](https://grafana.com/grafana/dashboards). For the first time of creating a dashboard, we will see a blank space and we just need to add panel to create a visualization of each metric. 
-
+  ![](Images/new_dashboard.PNG)
+  ![](Images/dashboard.PNG)
 
 
