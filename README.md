@@ -78,5 +78,6 @@ Now Prometheus is running. We can visualize the metrics recorded in Prometheus u
 * In order Grafana to work, we need to add data source to visualize. In this case, we want to connect the metrics pulled in Prometheus as the data source to Grafana by clicking on the cogwheel button and click the Data Source option. Add data source and select Prometheus. We will see the page below.
   ![](Images/post_data_source.PNG)
 * In the URL box, we need to specify the node port in which the prometheus pod is running. This is done by navigating to the Prometheus homepage and click on Status>Command-Line Flags. We will see the configuration of the running pod. Find the designated url of the running pod under name "web.external-url". Copy this url to the URL box in the Grafana Data Source page.
+  ![](Images/prom_config.PNG)
   ![](Images/prom_url.PNG)
 
