@@ -87,7 +87,7 @@ Now Prometheus is running. We can visualize the metrics recorded in Prometheus u
   ![](Images/dashboard.PNG)
   
 ## Create Alert
-* After successfully creating a dashboard, we can add a feature, like alerting, in each graph. On each graph, click on the title, then edit. We will see a window to set the visualization. Below the graph, there is an alert tab. Select alert tab, then creat a new alert.
+* After successfully creating a dashboard, we can add a feature, like alerting, in each graph. On each graph, click on the title, then edit. We will see a window for setting the configuration of each graph (e.g. data source, graph properties, metrics to show, etc). Below the graph, there is an alert tab. Select alert tab, then creat a new alert.
   ![](Images/create_alert.PNG)
  
 * Then, we just need the specify the condition, under which an alert should be arose. For example, while visualizing CPU usage, we want to set an alert whenever the CPU usage is above 90%. We can then set it inside the condition value. "When avg() of the query is above 90" send an alert.
