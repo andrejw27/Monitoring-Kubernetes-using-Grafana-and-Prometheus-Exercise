@@ -85,5 +85,13 @@ Now Prometheus is running. We can visualize the metrics recorded in Prometheus u
 * Now, it is time to build the dashboard. On the left pane of the Grafana homepage, click the "+"/Create button to create a dashboard or import if using existing templates provided by the [grafana dashboards](https://grafana.com/grafana/dashboards). For the first time of creating a dashboard, we will see a blank space and we just need to add panel to create a visualization of each metric. 
   ![](Images/new_dashboard.PNG)
   ![](Images/dashboard.PNG)
+  
+## Create Alert
+* After successfully creating a dashboard, we can add a feature, like alerting, in each graph. On each graph, click on the title, then edit. We will see a window to set the visualization. Below the graph, there is an alert tab. Select alert tab, then creat a new alert.
+  ![](Images/create_alert.PNG)
+ 
+* Then, we just need the specify the condition, under which an alert should be arose. For example, while visualizing CPU usage, we want to set an alert whenever the CPU usage is above 90%. We can then set it inside the condition value. "When avg() of the query is above 90" send an alert.
+  ![](Images/create_alert_2.PNG)
+
 
 
