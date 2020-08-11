@@ -44,3 +44,18 @@ This is an attempt of monitoring a server, managed by Kubernetes, using Grafana 
   $ kubectl port-forward -n monitor prometheus-prometheus-operator-prometheus-0 9090
   ```
   ![](Images/post_forward_prom.PNG)
+
+Now Prometheus is running. We can visualize the metrics recorded in Prometheus using Grafana.
+
+## Install Grafana
+
+* Installing Grafana is similar to installing Prometheus.
+  ```
+  $ helm install grafana stable/grafana --namespace monitor
+  ```
+  ![](Images/install_grafana.PNG)
+  
+ * Next, we need to locate the Grafana pod and then port forward to access it.
+  ```
+  $ kubectl get pod -n monitor | grep grafana
+  ```
