@@ -1,5 +1,7 @@
 # Monitoring-Kubernetes-using-Grafana-and-Prometheus-Exercise
 
+<p align="center"><img src="Images/k8s_graf_prom.png" width="400" height="300"></p>
+
 This is an attempt of monitoring a server, managed by Kubernetes, using Grafana and Prometheus.
 
 ## Introduction
